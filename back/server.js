@@ -17,6 +17,7 @@ app.use(express.urlencoded({extended: false}))
 
 // importar y usar la app
 app.use('/api/tareas', require('./routes/tareasRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 // utilizar el error handler
 app.use(errorHandler)

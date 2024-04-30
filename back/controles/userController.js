@@ -62,7 +62,7 @@ const generarToken = (idusuario)=> {
 
 const showdata = asyncHandler (async (req, res) => {
 
-    res.status(200).json(req.user)
+    res.status(200).json(req.user) // se obtiene del authMiddleware
 })
 
 module.exports = {

@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const tareaSchema = mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId, //es tipo id de un objeto
-        required: [true],
+        required: true,
         ref:'User' //busca el object id en la coleccion user
     },
     descripcion: {
